@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Flight Search</title>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/jquery.nouislider.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.nouislider.min.js"></script>
+        <script src="js/underscore-min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/modernizr.custom.42077"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Flight Search</h2>
+            <img src="img/airplane.png" />
+        </div>
+
+        <div class="selection">
+            <span id="oneWay" class="one_way clicked">One Way</span>
+            <span id="roundTrip" class="round_trip">Round Trip</span>
+
+            <div class="search_criteria">
+                <h3 class="selected_tab_heading">One Way</h3>
+                
+                <label>Enter Source</label>
+                <input id="source" class="input_cities" list="cities" placeholder="Enter Source" />
+                
+                <label>Enter Destination</label>
+                <input id="destination" class="input_cities" list="cities" placeholder="Enter Destination"/>
+                
+                <label>Enter Departure Date</label>
+                <input id="start_date" type="text" placeholder="mm/dd/yyyy" />
+                
+                <label id="return_label">Enter Return Date</label>
+                <input id="end_date" type="text" placeholder="mm/dd/yyyy" />
+                
+                <button id="search" type="button" onclick="search();">Search</button>
+                <datalist id="cities">
+                    <option value="New Delhi">
+                    <option value="Mumbai">
+                    <option value="Kolkata">
+                    <option value="Bangalore">
+                    <option value="Chennai">
+                    <option value="Pune">
+                    <option value="Chandigarh">
+                    <option value="Lucknow">
+                    <option value="Patna">
+                    <option value="Bhopal">
+                    <option value="Jaipur">
+                    <option value="Ahmedabad">
+                    <option value="Indore">
+                    <option value="Bhubneshwar">
+                    <option value="Goa">
+                    <option value="Ranchi">
+                    <option value="Gangtok">
+                    <option value="Bhopal">
+                </datalist>
+                <div class="price_slider">
+                    <p>Price: Rs.<span id="price_start">2000</span> - Rs.<span id="price_end">5000</span></p>
+                    <div class="slider_position" id="slider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search_results">
+        </div>
+    </body>
+</html>

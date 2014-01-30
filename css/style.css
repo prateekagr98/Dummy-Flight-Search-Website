@@ -1,0 +1,800 @@
+*{
+	margin:0;
+	padding: 0;
+	border:0;
+}
+
+body{
+	background: url('../img/background.png');
+}
+ 
+/* CSS for header starts */
+.header{
+	display: block;
+	width:100%;
+	height: 120px;
+	background-color: #DF7401;
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
+.header h2{
+	margin: auto;
+	width: 250px;
+	font-weight: bold;
+	color:white;
+	font-size: 2.3em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top: 20px;
+}
+
+.header img{
+	width: 250px;
+	margin-top:-30px;
+	margin-left: 60px;
+}
+/* header ends */
+
+/* CSS for selection starts */
+.selection{
+	position: relative;
+	float: left;
+	width: 270px;
+	margin-top: 50px;
+	margin-left: 140px;
+	background: #eeeeee;
+	border:2px solid rgba(0, 0, 0, 0.5);
+	border-top: 4px solid #DF7401;
+	border-radius:2px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 15px;
+}
+
+.one_way, .round_trip{
+	display: block;
+	position: absolute;
+	width: 115px;
+	height: 35px;
+	background: #eeeeee;
+	text-align: center;
+	left:-119px;
+	top:20px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-right: 0px;
+	padding-top: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+
+.round_trip{
+	top: 90px;
+}
+
+.one_way:hover, .round_trip:hover{
+	cursor:pointer;
+}
+
+.clicked{
+	background: #DF7401;
+	color: white;
+	border:2px solid white;
+	border-right: 0px;
+}
+
+.selected_tab_heading{
+	margin: 0;
+ 	padding: 0;
+ 	font-weight: normal;
+ 	color: #DF7401;
+ 	font-size: 2em;
+ 	padding-bottom: 10px;
+}
+
+label{
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+
+input{
+	width: 250px;
+	height: 30px;
+	padding: 2px;
+	padding-left: 10px;
+	margin-top: 3px;
+	margin-bottom: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+button{
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 0.875em;
+	font-weight: bold;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	border-bottom-left-radius: 12px;
+	transition: ease 0.5s; 
+}
+
+button:hover{
+	color: white;
+	border-color: white;
+	background-color: #DF7401;
+	cursor: pointer;
+}
+
+.price_slider{
+	margin-top:15px;
+}
+
+.price_slider p{
+	margin-bottom: 5px;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+/* selection ends */
+
+/* CSS for search result starts */
+.search_results{
+	position: relative;
+	float:right;
+	width: 56.36896046852123%;
+	max-width: 770px;
+	height: 470px;
+	margin-top: 50px;
+	margin-right: 50px;
+	padding: 15px;
+}
+
+.search_headers {
+	width: 90.90%;
+	height: 20px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.search_headers p{
+	float: left;
+	color: #DF7401;
+	font-weight: bold;
+}
+
+.airline_label{
+	margin-left: 7.142857142857143%;
+	width: 50px;
+	text-align: center;
+}
+
+.departure_label{
+	margin-left:14.28571428571429%;
+	width: 100px;
+	text-align: center;
+}
+
+.arrival_label{
+	width: 50px;
+	margin-left: 8.571428571428571%;
+	text-align: center;
+}
+
+.duration_label{
+	margin-left: 8.571428571428571%;
+	width: 60px;
+	text-align: center;
+}
+
+.search_results h3{
+	margin: 0;
+ 	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 2em;
+}
+
+#select_return_flight{
+	position: absolute;
+	width: 170px;
+	right: 30px;
+	top: 20px;
+}
+
+#flight_search_date{
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.no_result{
+	position: absolute;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 1.3em;
+	top: 130px;
+	left: 22.85714285714286%;
+	font-weight: bold;
+}
+
+.flight_details_style{
+	position: relative;
+	width: 90.90909090909091;
+	height: 65px;
+	border-left: 5px solid #DF7401;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.airline_name_style{
+	float:left;
+	width: 120px;
+	margin: 0;
+ 	padding: 5px;
+ 	padding-left: 10px;
+ 	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.flight_number_style{
+	position: absolute;
+	top: 30px;
+	margin: 0;
+	width: 120px;
+ 	padding-left: 10px;
+ 	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	text-align: center;
+}
+
+.departure_time_style{
+	float: left;
+	width: 50px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	margin-top: 10px;
+	margin-left: 11.42857142857143%;
+	text-align: center;
+}
+
+.departure_venue_style{
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	margin-top: 30px;
+	margin-left: -10.71428571428571%;
+	text-align: center;
+}
+
+.arrival_time_style{
+	float:left;
+	width: 50px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	margin-top: 10px;
+	margin-left: 8.571428571428571%;
+	text-align: center;
+}
+
+.arrival_venue_style{
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	margin-top: 30px;
+	margin-left: -10%;
+	text-align: center;
+}
+
+.duration_style{
+	float:left;
+	width: 50px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+	margin-top: 15px;
+	margin-left: 4.285714285714286%;
+	text-align: center;
+}
+
+.flight_cost_style{
+	position: absolute;
+	top:2px;
+	right: 25px;
+	margin-right: 2.142857142857143%;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.4em;
+}
+
+#flight_details button{
+	position: absolute;
+	right: 0px;
+	border-top-right-radius: 12px;
+	margin-top: 30px;
+	margin-right: 2.142857142857143%;
+}
+/* search result ends */
+
+
+/* CSS for view max-width: 1280px */
+
+@media screen and (max-width: 1280px){
+	.search_results{
+		position: relative;
+		width: 550px;
+		height: 470px;
+		margin-top: 50px;
+		padding: 15px;
+	}
+
+	.airline_label{
+		margin-left: 15px;
+		width: 50px;
+		text-align: center;
+	}
+
+	.departure_label{
+		margin-left:50px;
+		width: 100px;
+		text-align: center;
+	}
+
+	.arrival_label{
+		width: 50px;
+		margin-left: 30px;
+		text-align: center;
+	}
+
+	.duration_label{
+		margin-left: 35px;
+		width: 60px;
+		text-align: center;
+	}
+
+	.no_result{
+		position: absolute;
+		color: rgba(0, 0, 0, 0.4);
+		font-size: 1.3em;
+		left: 8.85714285714286%;
+		font-weight: bold;
+	}
+
+	.flight_details_style{
+		position: relative;
+		width: 550px;
+		height: 65px;
+		border-left: 5px solid #DF7401;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin-bottom: 30px;
+	}
+
+	.airline_name_style{
+		float:left;
+		width: 120px;
+		margin: 0;
+ 		padding: 5px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.5em;
+		text-align: left;
+	}
+
+	.flight_number_style{
+		position: absolute;
+		top: 30px;
+		margin: 0;
+		width: 120px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		text-align: left;
+	}
+
+	.departure_time_style{
+		float: left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	.departure_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -75px;
+	}
+
+	.arrival_time_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+	.arrival_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -75px;
+	}
+
+	.duration_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+
+	.flight_cost_style{
+		position: absolute;
+		top:2px;
+		right: 25px;
+		margin-right: 7px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.4em;
+	}
+
+	#flight_details button{
+		position: absolute;
+		right: 0px;
+		border-top-right-radius: 12px;
+		margin-top: 30px;
+		margin-right: 7px;
+	}
+}
+
+/* CSS for max-width 1100px */
+@media screen and (max-width: 1100px){
+	.search_results{
+		float: left;
+		position: relative;
+		width: 60.15625%;
+		min-width: 700px;
+		height: 470px;
+		margin-top: 50px;
+		margin-left: 30px;
+		padding: 15px;
+	}
+
+	.search_headers {
+		width: 700px;
+		height: 20px;
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+
+	.search_headers p{
+		float: left;
+		color: #DF7401;
+		font-weight: bold;
+	}
+
+	.airline_label{
+		margin-left: 50px;
+		width: 50px;
+		text-align: center;
+	}
+
+	.departure_label{
+		margin-left: 110px;
+		width: 100px;
+		text-align: center;
+	}
+
+	.arrival_label{
+		width: 50px;
+		margin-left: 45px;
+		text-align: center;
+	}
+
+	.duration_label{
+		margin-left: 50px;
+		width: 60px;
+		text-align: center;
+	}
+
+	.search_results h3{
+		margin: 0;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 2em;
+	}
+	
+	#flight_search_date{
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+	}
+
+	.no_result{
+		position: absolute;
+		color: rgba(0, 0, 0, 0.4);
+		font-size: 1.3em;
+		left: 22.85714285714286%;
+		font-weight: bold;
+	}
+
+	.flight_details_style{
+		position: relative;
+		width: 700px;
+		height: 65px;
+		border-left: 5px solid #DF7401;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin-bottom: 30px;
+	}
+
+	.airline_name_style{
+		float:left;
+		width: 120px;
+		margin: 0;
+ 		padding: 5px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.flight_number_style{
+		position: absolute;
+		top: 30px;
+		margin: 0;
+		width: 120px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.departure_time_style{
+		float: left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 80px;
+		text-align: center;
+	}
+
+	.departure_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -75px;
+		text-align: center;
+	}
+
+	.arrival_time_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 60px;
+		text-align: center;
+	}
+	
+	.arrival_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -70px;
+		text-align: center;
+	}
+
+	.duration_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 15px;
+		margin-left: 35px;
+		text-align: center;
+	}
+
+	.flight_cost_style{
+		position: absolute;
+		top:2px;
+		right: 25px;
+		margin-right: 15px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.4em;
+	}
+
+	#flight_details button{
+		position: absolute;
+		right: 0px;
+		border-top-right-radius: 12px;
+		margin-top: 30px;
+		margin-right: 15px;
+	}
+}
+
+/* CSS for 768px screen size */
+@media screen and (max-width: 768px){
+	.search_results{
+		float: left;
+		position: relative;
+		width: 60.15625%;
+		min-width: 550px;
+		height: 470px;
+		margin-top: 50px;
+		margin-left: 30px;
+		padding: 15px;
+	}
+
+	.airline_label{
+		margin-left: 15px;
+		width: 50px;
+		text-align: center;
+	}
+
+	.departure_label{
+		margin-left:50px;
+		width: 100px;
+		text-align: center;
+	}
+
+	.arrival_label{
+		width: 50px;
+		margin-left: 30px;
+		text-align: center;
+	}
+
+	.duration_label{
+		margin-left: 35px;
+		width: 60px;
+		text-align: center;
+	}
+
+	.no_result{
+		position: absolute;
+		color: rgba(0, 0, 0, 0.4);
+		font-size: 1.3em;
+		left: 8.85714285714286%;
+		font-weight: bold;
+	}
+
+	.flight_details_style{
+		position: relative;
+		width: 550px;
+		height: 65px;
+		border-left: 5px solid #DF7401;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin-bottom: 30px;
+	}
+
+	.airline_name_style{
+		float:left;
+		width: 120px;
+		margin: 0;
+ 		padding: 5px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.5em;
+		text-align: left;
+	}
+
+	.flight_number_style{
+		position: absolute;
+		top: 30px;
+		margin: 0;
+		width: 120px;
+ 		padding-left: 10px;
+ 		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		text-align: left;
+	}
+
+	.departure_time_style{
+		float: left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	.departure_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -75px;
+	}
+
+	.arrival_time_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+	.arrival_venue_style{
+		float: left;
+		width: 100px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 30px;
+		margin-left: -75px;
+	}
+
+	.duration_style{
+		float:left;
+		width: 50px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1em;
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+
+	.flight_cost_style{
+		position: absolute;
+		top:2px;
+		right: 25px;
+		margin-right: 7px;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.4em;
+	}
+
+	#flight_details button{
+		position: absolute;
+		right: 0px;
+		border-top-right-radius: 12px;
+		margin-top: 30px;
+		margin-right: 7px;
+	}
+}
